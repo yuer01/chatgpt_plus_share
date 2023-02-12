@@ -7,7 +7,7 @@
 登录地址： https://chat.openai.com/auth/login (需要科学上网) <br/>
 账号 2269597593@qq.com <br/>
 密码 请加微信群，为了账号安全，随时会更改<br/>
-<img style="width:50%" src="./doc/img/20230212193742.jpg" />
+<img style="width:50%" src="./doc/img/20230212195504.png" />
 </p>
 
 <p>
