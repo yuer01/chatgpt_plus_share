@@ -24,4 +24,10 @@ https://github.com/fuergaosi233/wechat-chatgpt/blob/main/README_ZH.md<br/><br/>
 有趣调教玩法：<br/>
 https://github.com/PlexPt/awesome-chatgpt-prompts-zh<br/><br/>
 
+
+</p>
+<p>
+国内镜像，套壳的：<br/>
+https://chat.forchange.cn/<br/>
+https://so.csdn.net/so/chat
 </p>
