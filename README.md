@@ -5,13 +5,13 @@
 </p>
 <p>
 登录地址： https://chat.openai.com/auth/login (需要科学上网) <br/>
-账号 2269597593@qq.com <br/>
-密码 请加微信群，为了账号安全，随时会更改<br/>
-<img style="width:50%" src="./doc/img/20230212195504.png" />
+账号 2269597593@qq.com （请发邮件到此邮箱，我会及时回复你账号密码）<br/>
+密码 请加微信群，发邮件联系。<br/>
+<img style="width:50%" src="https://user-images.githubusercontent.com/7564469/219060741-166ff466-5933-4941-8895-60169f7b8dd9.png" />
 </p>
 
 <p>
-相关git： <br/>
+<h3>相关git：</h3> 
 java代码调用：<br/>
 https://github.com/PlexPt/chatgpt-java <br/><br/>
 
@@ -27,7 +27,46 @@ https://github.com/PlexPt/awesome-chatgpt-prompts-zh<br/><br/>
 
 </p>
 <p>
-国内镜像，套壳的：<br/>
+<h3>国内镜像，套壳的：</h3><br/>
 https://chat.forchange.cn/<br/>
 https://so.csdn.net/so/chat
+</p>
+
+<p>
+<br/>
+<h3>下面是邮件内容：</h3>
+
+各位大佬，您好：<br/>
+<br/>
+感谢因为语言大模型汇聚到这里沟通，如果谁有定制语言模型的需求，可以跟我沟通。<br/>
+比如基于chatgpt的法律咨询模型，有产品介绍的售前客服咨询，有专业知识的企业咨询等<br/>
+
+登录地址： https://chat.openai.com/auth/login (登录前需要自备梯子）<br/>
+Plus账号 2269597593@qq.com<br/>
+密码 之前联系的已经群发邮件了<br/>
+（请妥善保管密码，仅用于网页聊天，不要新建key了，网页聊天不消耗api用量）<br/>
+注意： <br/>
+因为是多人同时用一个账号，为了保障您的隐私，请聊天后及时删除自己的会话。<br/>
+不要尝试该密码，没邮箱权限也改不了<br/>
+
+如果想自己申请plus账号，请参考： <br/>
+【腾讯文档】我是如何注册到chatGPT Plus会员的<br/>
+https://docs.qq.com/doc/DRGFqTmlZRlREd1dz<br/>
+
+plus账号api调用资源比较宝贵，建议每天调用10次以内，如果想大量测试，可以先用免费账号的key<br/>
+
+Plus账号的新key （总共18美金，但是结果会比较准确自然）<br/>
+邮件里有 （谨慎调用，每天10次以内）<br/><br/>
+
+
+同时赠送免费账号：<br/>
+账号 wuxian1611134@2925.com<br/>
+密码  邮件中有<br/>
+免费账号的key （同样18美金，结果比较随机，质量一般）<br/>
+sk-sRfQ6YMUhuwdAiJNGztiT3BlbkFJgQ（邮件中有）sM39JhbvJ （调试先用这个）<br/>
+</p>
+
+<p>
+还有详细问题，请查看这个项目的wiki<br/>
+https://github.com/yuer01/chatgpt_plus_share/wiki
 </p>
