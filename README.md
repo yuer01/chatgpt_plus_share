@@ -4,14 +4,14 @@
   刚刚花了180元开通的一个，独乐不如众乐。
 </p>
 <p>
-现在升级为输入自己邮箱，自动获取密码，操作地址： https://static-mp-0b1520b4-b37d-449c-a252-3fb82ce19eaa.next.bspapp.com/#/<br/><br/>
+现在升级为输入自己邮箱，自动获取密码，操作地址： https://static-mp-0b1520b4-b37d-449c-a252-3fb82ce19eaa.next.bspapp.com/#/ <br/><br/>
 
 登录地址： https://chat.openai.com/auth/login (需要科学上网) <br/>
-账号 2269597593@qq.com （请发邮件到此邮箱，我会及时回复你账号密码）<br/>
+账号 2269597593@qq.com （请发邮件到此邮箱，我会及时回复你账号密码。或者使用上面链接自动获取）<br/>
 密码 请加微信群，发邮件联系。<br/>
 
 
-<img style="width:50%" src="https://user-images.githubusercontent.com/7564469/219060741-166ff466-5933-4941-8895-60169f7b8dd9.png" />
+<img style="width:50%" src="./doc/img/20230224153443.jpg" />
 </p>
 
 <p>
