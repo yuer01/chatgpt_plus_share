@@ -8,8 +8,13 @@
 
 登录地址： https://chat.openai.com/auth/login (需要科学上网) <br/>
 账号 2269597593@qq.com （请发邮件到此邮箱，我会及时回复你账号密码。或者使用上面链接自动获取）<br/>
-密码 请加微信群，发邮件联系。<br/>
+密码 请加微信群，或通过上面链接发邮件联系。<br/><br/>
 
+
+!!!!! 最新newBing账号共享来了：<br/>
+网址： https://www.bing.com/ （需要Microsoft Edge 浏览器，不需要梯子）<br/>
+账号: 527948401@qq.com<br/>
+密码: 请加微信群，或通过上面链接发邮件联系。<br/>
 
 <img style="width:50%" src="./doc/img/20230224153443.jpg" />
 </p>
