@@ -16,7 +16,6 @@
 密码: 请加微信群，或通过链接发邮件联系。<br/>
 https://static-mp-0b1520b4-b37d-449c-a252-3fb82ce19eaa.next.bspapp.com/#/
 
-<img style="width:50%" src="./doc/img/20230224153443.jpg" /><br/><br/>
 
 <img style="width:50%" src="./doc/img/20230320094853.jpg" />
 </p>
