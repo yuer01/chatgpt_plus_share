@@ -1,20 +1,25 @@
 <h1 align="center">Welcome to chatgpt-plus-share 👋</h1>
 <p>
-  众所周知，chatgpt最近收费了，鉴于很多同学想用，但是免费账号不满足的情况下，可以试试共享付费账号。
-  刚刚花了180元开通的一个，独乐不如众乐。
+  众所周知，chatgpt收费，鉴于很多同学想用，但是免费账号不满足的情况下，可以试试组队试用账号。
 </p>
 <p>
 
+获取组队试用账号方法，登录系统<br/>
+https://share.smallsesame.site/admin/ <br/>
+账号自己注册 <br/>
+20元一个月，一个账号8个人。<br/><br/>
+
+
+
 登录地址： https://chat.openai.com/auth/login (需要科学上网) <br/>
 账号 527948401@qq.com <br/>
-密码 加群后，公告里有账号密码<br/><br/>
+密码 请加微信群，或通过上述系统获取<br/><br/>
 
 
 !!!!! 最新newBing账号共享来了：<br/>
 网址： https://www.bing.com/ （需要Microsoft Edge 浏览器，不需要梯子）<br/>
 账号: 527948401@qq.com<br/>
 密码: 请加微信群，或通过链接发邮件联系。<br/>
-https://static-mp-0b1520b4-b37d-449c-a252-3fb82ce19eaa.next.bspapp.com/#/
 
 
 <img style="width:50%" src="./doc/img/20230320094853.jpg" />
