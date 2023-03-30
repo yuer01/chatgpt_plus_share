@@ -12,17 +12,15 @@ https://share.smallsesame.site/admin/ <br/>
 
 
 登录地址： https://chat.openai.com/auth/login (需要科学上网) <br/>
-账号 527948401@qq.com <br/>
+账号 527948401@qq.com (已满8人，还需要可登录上述系统购买) <br/>
 密码 请加微信群，或通过上述系统获取<br/><br/>
 
-
-!!!!! 最新newBing账号共享来了：<br/>
-网址： https://www.bing.com/ （需要Microsoft Edge 浏览器，不需要梯子）<br/>
-账号: 527948401@qq.com<br/>
-密码: 请加微信群，或通过链接发邮件联系。<br/>
+【腾讯文档】组队账号常见问题<br/>
+https://docs.qq.com/doc/DRFNIU0xpZmpSTWNG<br/><br/>
 
 
-<img style="width:50%" src="./doc/img/20230320094853.jpg" />
+沟通群：<br/>
+<img style="width:50%" src="./doc/img/20230330124017.jpg" />
 </p>
 
 <p>
