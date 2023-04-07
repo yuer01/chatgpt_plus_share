@@ -20,7 +20,7 @@ https://docs.qq.com/doc/DRFNIU0xpZmpSTWNG<br/><br/>
 
 
 沟通群：<br/>
-<img style="width:50%" src="./doc/img/20230330124017.jpg" />
+<img style="width:50%" src="./doc/img/20230406173714.jpg" />
 </p>
 
 <p>
