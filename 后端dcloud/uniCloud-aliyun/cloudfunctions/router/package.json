@@ -1,0 +1,28 @@
+{
+  "name": "router",
+  "version": "1.0.0",
+  "description": "在router目录下执行 npm i",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uni-config-center": "file:../../../uni_modules/uni-config-center/uniCloud/cloudfunctions/common/uni-config-center",
+    "uni-id": "file:../../../uni_modules/uni-id/uniCloud/cloudfunctions/common/uni-id",
+    "vk-unicloud": "file:../../../uni_modules/vk-unicloud/uniCloud/cloudfunctions/common/vk-unicloud"
+  },
+  "private": true,
+  "cloudfunction-config": {
+    "concurrency": 1,
+    "memorySize": 512,
+    "path": "",
+    "timeout": 60,
+    "triggers": [],
+    "runtime": "Nodejs12",
+    "keepRunningAfterReturn": false
+  },
+  "extensions": {}
+}

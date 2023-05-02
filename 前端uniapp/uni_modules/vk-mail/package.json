@@ -1,0 +1,83 @@
+{
+	"id": "vk-mail",
+	"displayName": "【开箱即用】vk-mail 邮件发送公共模块，无第三方npm依赖。",
+	"version": "1.0.0",
+	"description": "vk-mail是一个邮件发送请求库，大小约200KB，兼容任何 unicloud 框架。（只要是node.js就能用）",
+	"keywords": [
+        "vk-mail",
+        "vk云开发",
+        "邮件发送",
+        "邮箱发送"
+    ],
+	"repository": "",
+	"engines": {
+		"HBuilderX": "^3.1.6"
+	},
+	"dcloudext": {
+		"category": [
+			"uniCloud",
+			"云函数模板"
+		],
+		"sale": {
+			"regular": {
+				"price": "0.00"
+			},
+			"sourcecode": {
+				"price": "0.00"
+			}
+		},
+		"contact": {
+			"qq": "370725567"
+		},
+		"declaration": {
+			"ads": "无",
+			"data": "插件不采集任何数据",
+			"permissions": "无"
+		},
+		"npmurl": ""
+	},
+	"uni_modules": {
+		"dependencies": [],
+		"encrypt": [],
+		"platforms": {
+			"cloud": {
+				"tcb": "y",
+				"aliyun": "y"
+			},
+			"client": {
+				"Vue": {
+					"vue2": "u",
+					"vue3": "u"
+				},
+				"App": {
+					"app-vue": "u",
+					"app-nvue": "u"
+				},
+				"H5-mobile": {
+					"Safari": "u",
+					"Android Browser": "u",
+					"微信浏览器(Android)": "u",
+					"QQ浏览器(Android)": "u"
+				},
+				"H5-pc": {
+					"Chrome": "u",
+					"IE": "u",
+					"Edge": "u",
+					"Firefox": "u",
+					"Safari": "u"
+				},
+				"小程序": {
+					"微信": "u",
+					"阿里": "u",
+					"百度": "u",
+					"字节跳动": "u",
+					"QQ": "u"
+				},
+				"快应用": {
+					"华为": "u",
+					"联盟": "u"
+				}
+			}
+		}
+	}
+}

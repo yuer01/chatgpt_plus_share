@@ -1,0 +1,881 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/cf-database?id=db_init
+
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+
+{
+	"vk-test": {
+		"data": [
+			
+		],
+		"index": [
+			{
+				"IndexName": "location",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "location","Direction": "2dsphere"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-users": {
+		"data": [
+			{
+				"_id":"001",
+				"username": "admin",
+				"password": "03caebb36670995fc261a275d212cad65e4bbebd",
+				"register_date": 1596416400000,
+				"register_ip": "127.0.0.1",
+				"nickname": "超级管理员",
+				"role":["admin"],
+				"token": [],
+				"allow_login_background":true
+			}
+		],
+		"index": [
+			{
+				"IndexName": "username",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "username","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "mobile",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "mobile","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "email",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "email","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "wx_openid.app-plus",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "wx_openid.app-plus","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "wx_openid.mp-weixin",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "wx_openid.mp-weixin","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "wx_unionid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "wx_unionid","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "ali_openid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "ali_openid","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "my_invite_code",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "my_invite_code","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "inviter_uid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "inviter_uid","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "invite_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "invite_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "role",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "role","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "register_date",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "register_date","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-verify-codes": {
+		"data": [],
+		"index": [
+			{
+				"IndexName": "mobile",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "mobile",
+						"Direction": "1"
+					}, {
+						"Name": "code",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "email",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "email",
+						"Direction": "1"
+					}, {
+						"Name": "code",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "type",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "type","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "state",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "state","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-tempdata": {
+		"data": [
+	
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "expired",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "expired","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-open-data": {
+		"data": [
+	
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "expired",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "expired","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-log":{
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "user_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "user_id","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-roles":{
+		"data": [
+			{
+				"_id": "001",
+				"_add_time": 1596416400000,
+				"enable":true,
+				"role_id":"admin",
+				"role_name": "超级管理员",
+				"comment":"系统内置角色 - 请勿修改",
+				"permission": []
+			},
+			{
+				"_id": "005",
+				"_add_time": 1596416400000,
+				"enable":true,
+				"role_id":"query-all",
+				"role_name": "boss",
+				"comment":"系统内置角色 - 请勿修改",
+				"permission": []
+			},
+			{
+				"_id": "006",
+				"_add_time": 1596416400000,
+				"enable":true,
+				"role_id":"custom-role-1",
+				"role_name": "自定义角色-1",
+				"comment":"更细粒化的自定义角色权限示例",
+				"permission": []
+			}
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "role_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "role_id","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "permission",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "permission","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "role_name",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "role_name","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-permissions":{
+		"data": [
+			{
+				"_id": "sys-permission",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-permission",
+				"permission_name": "系统内置权限",
+				"comment":"系统内置权限",
+				"url": "",
+				"sort": 103,
+				"enable":true
+			},
+			{
+				"_id": "sys-permission-add",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-permission-add",
+				"permission_name": "系统内置 - 增",
+				"comment":"所有函数名以add开头的云函数",
+				"url": ["*/add*"],
+				"icon":"vk-icon-add",
+				"sort": 1,
+				"parent_id":"sys-permission",
+				"enable":true,
+				"match_mode":1,
+				"curd_category":1,
+				"level":3
+			},
+			{
+				"_id": "sys-permission-delete",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-permission-delete",
+				"permission_name": "系统内置 - 删",
+				"comment":"所有函数名以delete开头的云函数",
+				"url": ["*/delete*"],
+				"icon":"vk-icon-delete",
+				"sort": 2,
+				"parent_id":"sys-permission",
+				"enable":true,
+				"match_mode":1,
+				"curd_category":2,
+				"level":4
+			},
+			{
+				"_id": "sys-permission-update",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-permission-update",
+				"permission_name": "系统内置 - 改",
+				"comment":"所有函数名以update开头的云函数",
+				"url": ["*/update*"],
+				"icon":"el-icon-edit",
+				"sort": 3,
+				"parent_id":"sys-permission",
+				"enable":true,
+				"match_mode":1,
+				"curd_category":3,
+				"level":3
+			},
+			{
+				"_id": "sys-permission-read",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-permission-read",
+				"permission_name": "系统内置 - 查",
+				"comment":"包含所有的查询操作",
+				"url": ["*/get*","*/find*","*/select*"],
+				"icon":"vk-icon-text",
+				"sort": 4,
+				"parent_id":"sys-permission",
+				"enable":true,
+				"match_mode":1,
+				"curd_category":4,
+				"level":3
+			},
+			{
+				"_id": "sys-manage",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-manage",
+				"permission_name": "用户角色权限菜单",
+				"comment":"",
+				"sort": 101,
+				"enable":true
+			},
+			{
+				"_id": "sys-manage-user",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-manage-user",
+				"permission_name": "系统 - 用户管理",
+				"comment":"",
+				"url": ["admin/system/user/sys/*"],
+				"sort": 1,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"sys-manage"
+			},
+			{
+				"_id": "sys-manage-role",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-manage-role",
+				"permission_name": "系统 - 角色管理",
+				"comment":"",
+				"url": ["admin/system/role/sys/*"],
+				"sort": 2,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"sys-manage"
+			},
+			{
+				"_id": "sys-manage-permission",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-manage-permission",
+				"permission_name": "系统 - 权限管理",
+				"comment":"",
+				"url": ["admin/system/permission/sys/*"],
+				"sort": 3,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"sys-manage"
+			},
+			{
+				"_id": "sys-manage-menu",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-manage-menu",
+				"permission_name": "系统 - 菜单管理",
+				"comment":"",
+				"url": ["admin/system/menu/sys/*"],
+				"sort": 4,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"sys-manage"
+			},
+			{
+				"_id": "sys-manage-app",
+				"_add_time": 1596416400000,
+				"permission_id":"sys-manage-app",
+				"permission_name": "系统 - 应用管理",
+				"comment":"",
+				"url": ["admin/system/app/sys/*"],
+				"sort": 5,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"sys-manage"
+			},
+			{
+				"_id": "sys-manage-app-upgrade-center",
+				"_add_time": 1596416400000,
+				"permission_id": "sys-manage-app-upgrade-center",
+				"permission_name": "系统 - App升级中心",
+				"comment":"",
+				"url": ["admin/system/app-upgrade-center/sys/*"],
+				"sort": 6,
+				"enable": true,
+				"match_mode": 1,
+				"parent_id": "sys-manage"
+			},
+			{
+				"_id": "system-uni",
+				"_add_time": 1596416400000,
+				"permission_id":"system-uni",
+				"permission_name": "系统设置",
+				"comment":"",
+				"sort": 102,
+				"enable":true
+			},
+			{
+				"_id": "system-uni-uni-id-files",
+				"_add_time": 1596416400000,
+				"permission_id":"system-uni-uni-id-files",
+				"permission_name": "系统 - 素材管理",
+				"comment":"",
+				"url": ["admin/system_uni/uni-id-files/*"],
+				"sort": 1,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"system-uni"
+			},
+			{
+				"_id": "system-uni-vk-global-data",
+				"_add_time": 1596416400000,
+				"permission_id":"system-uni-vk-global-data",
+				"permission_name": "系统 - 缓存管理",
+				"comment":"",
+				"url": ["admin/system_uni/global-data/sys/*"],
+				"sort": 2,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"system-uni"
+			},
+			{
+				"_id": "system-uni-vk-components-dynamic",
+				"_add_time": 1596416400000,
+				"permission_id":"system-uni-vk-components-dynamic",
+				"permission_name": "系统 - 动态组件数据管理",
+				"comment":"",
+				"url": ["admin/system_uni/components-dynamic/sys/*"],
+				"sort": 3,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"system-uni"
+			},
+			{
+				"_id": "system-uni-uni-id-log",
+				"_add_time": 1596416400000,
+				"permission_id":"system-uni-uni-id-log",
+				"permission_name": "系统 - 用户登录日志管理",
+				"comment":"",
+				"url": ["admin/system_uni/uni-id-log/sys/*"],
+				"sort": 4,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"system-uni"
+			},
+			{
+				"_id": "system-uni-opendb-admin-log",
+				"_add_time": 1596416400000,
+				"permission_id":"system-uni-opendb-admin-log",
+				"permission_name": "系统 - 操作日志管理",
+				"comment":"",
+				"url": ["admin/system_uni/admin-log/sys/*"],
+				"sort": 5,
+				"enable":true,
+				"match_mode":1,
+				"parent_id":"system-uni"
+			}
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "permission_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "permission_id","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "parent_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "parent_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "url",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "url","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-admin-menus":{
+		"data": [
+			{
+				"_id": "sys-admin",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-admin",
+				"name": "用户角色权限",
+				"icon":"el-icon-s-tools",
+				"url": "",
+				"comment":"系统内置",
+				"sort": 100,
+				"enable":true
+			},
+			{
+				"_id": "sys-user-manage",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-user-manage",
+				"name": "用户管理",
+				"icon":"el-icon-s-custom",
+				"url": "/pages_plugs/system/user/list",
+				"comment":"1个角色可以分配多个角色",
+				"sort": 1,
+				"parent_id":"sys-admin",
+				"enable":true
+			},
+			{
+				"_id": "sys-role-manage",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-role-manage",
+				"name": "角色管理",
+				"icon":"el-icon-user",
+				"url": "/pages_plugs/system/role/list",
+				"comment":"1个角色可以分配多个权限和菜单",
+				"sort": 2,
+				"parent_id":"sys-admin",
+				"enable":true
+			},
+			{
+				"_id": "sys-permission-manage",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-permission-manage",
+				"name": "权限管理",
+				"icon":"vk-icon-lock",
+				"url": "/pages_plugs/system/permission/list",
+				"comment":"1个权限可以匹配多个云函数",
+				"sort": 3,
+				"parent_id":"sys-admin",
+				"enable":true
+			},
+			{
+				"_id": "sys-menus-manage",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-menus-manage",
+				"name": "菜单管理",
+				"icon":"el-icon-tickets",
+				"url": "/pages_plugs/system/menu/list",
+				"comment":"控制admin左侧菜单的显示和隐藏",
+				"sort": 4,
+				"parent_id":"sys-admin",
+				"enable":true
+			},
+			{
+				"_id": "sys-app-manage",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-app-manage",
+				"name": "应用管理",
+				"icon":"el-icon-cloudy",
+				"url": "/pages_plugs/system/app/list",
+				"comment":"应用管理",
+				"sort": 5,
+				"parent_id":"sys-admin",
+				"enable":true
+			},
+			{
+				"_id": "sys-app-upgrade-center",
+				"_add_time": 1596416400000,
+				"menu_id":"sys-app-upgrade-center",
+				"name": "App升级中心",
+				"icon":"vk-icon-shengji3-xianxing",
+				"url": "/pages_plugs/system/app-upgrade-center/list",
+				"comment":"管理和发布新的app版本",
+				"sort": 6,
+				"parent_id":"sys-admin",
+				"enable":true
+			},
+			{
+				"_id": "system-uni",
+				"_add_time": 1596416400000,
+				"enable": true,
+				"icon": "el-icon-s-tools",
+				"menu_id": "system-uni",
+				"name": "系统设置",
+				"sort": 110
+			},
+			{
+				"_id": "system-uni-uni-id-files",
+				"sort": 1,
+				"url": "/pages_plugs/system_uni/uni-id-files/list",
+				"_add_time": 1596416400000,
+				"enable": true,
+				"icon": "el-icon-folder-opened",
+				"menu_id": "system-uni-uni-id-files",
+				"name": "素材管理",
+				"parent_id": "system-uni"
+			},
+			{
+				"_id": "system-uni-vk-global-data",
+				"enable": true,
+				"icon": "",
+				"menu_id": "system-uni-vk-global-data",
+				"name": "系统缓存管理",
+				"parent_id": "system-uni",
+				"sort": 2,
+				"url": "/pages_plugs/system_uni/vk-global-data",
+				"_add_time": 1596416400000
+			},
+			{
+				"_id": "system-uni-vk-components-dynamic",
+				"sort": 3,
+				"url": "/pages_plugs/system_uni/vk-components-dynamic",
+				"_add_time": 1596416400000,
+				"enable": true,
+				"icon": "",
+				"menu_id": "system-uni-vk-components-dynamic",
+				"name": "动态组件数据",
+				"parent_id": "system-uni"
+			},
+			{
+				"_id": "system-uni-uni-id-log",
+				"sort": 8,
+				"url": "/pages_plugs/system_uni/uni-id-log",
+				"_add_time": 1596416400000,
+				"enable": true,
+				"icon": "",
+				"menu_id": "system-uni-uni-id-log",
+				"name": "用户登录日志",
+				"parent_id": "system-uni"
+			},
+			{
+				"_id": "system-uni-opendb-admin-log",
+				"sort": 9,
+				"url": "/pages_plugs/system_uni/opendb-admin-log",
+				"_add_time": 1596416400000,
+				"enable": true,
+				"icon": "",
+				"menu_id": "system-uni-opendb-admin-log",
+				"name": "系统操作日志",
+				"parent_id": "system-uni"
+			}
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "menu_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "menu_id","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "parent_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "parent_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "url",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "url","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-app-list": {
+		"data": [
+			{
+				"_id":"001",
+				"appid": "__UNI__01F080F",
+				"type": "client",
+				"name": "用户端",
+				"description": "此为用户端应用",
+				"create_date": 1596416400000,
+				"_add_time": 1596416400000,
+				"_add_time_str": "2020-08-03 09:00:00"
+			},
+			{
+				"_id":"002",
+				"appid": "__UNI__570A7FB",
+				"type": "admin",
+				"name": "管理端",
+				"description": "此为管理端应用",
+				"create_date": 1596416400000,
+				"_add_time": 1596416400000,
+				"_add_time_str": "2020-08-03 09:00:00"
+			}
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "appid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "appid","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "name",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "name","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "type",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "type","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "create_date",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "create_date","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "enable_upgrade_center",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "enable_upgrade_center", "Direction": "1" }], "MgoIsUnique": false }
+			}
+		]
+	},
+	"opendb-app-versions": {
+		"data": [],
+		"index": [{
+				"IndexName": "_add_time",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "_add_time", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "appid",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "appid", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "name",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "name", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "platform",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "platform", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "type",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "type", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "uni_platform",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "uni_platform", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "create_env",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "create_env", "Direction": "1" }], "MgoIsUnique": false }
+			},
+			{
+				"IndexName": "stable_publish",
+				"MgoKeySchema": { "MgoIndexKeys": [{ "Name": "stable_publish", "Direction": "1" }], "MgoIsUnique": false }
+			}
+		]
+	},
+	"opendb-admin-log":{
+	  "data": [
+	
+	  ],
+	  "index": [
+	    {
+	      "IndexName": "_add_time",
+	      "MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+	    },
+	    {
+	      "IndexName": "user_id",
+	      "MgoKeySchema": {"MgoIndexKeys": [{"Name": "user_id","Direction": "1"}],"MgoIsUnique": false}
+	    },
+	    {
+	      "IndexName": "title",
+	      "MgoKeySchema": {"MgoIndexKeys": [{"Name": "title","Direction": "1"}],"MgoIsUnique": false}
+	    }
+	  ]
+	},
+	"vk-components-dynamic":{
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "data_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "data_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "title",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "title","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "type",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "type","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "show",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "show","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "name",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "name","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"vk-global-data":{
+		"data":[
+
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "key",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "key","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "expired_at",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "expired_at","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"vk-files": {
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "user_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "user_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "status",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "status","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "type",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "type","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "display_name",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "display_name","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "url",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "url","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"vk-files-categories": {
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "name",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "name","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"vk-pay-orders": {
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "out_trade_no",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "out_trade_no","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "user_order_success",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "user_order_success","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "transaction_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "transaction_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "total_fee",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "total_fee","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "pid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "pid","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"vk-pay-config": {
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	}
+}

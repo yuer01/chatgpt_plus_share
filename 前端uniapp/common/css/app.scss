@@ -1,0 +1,47 @@
+/* 这里是你自己写的全局css样式 */
+
+/* 滚动条美化方案开始 去掉下方css的注释即可 */
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-track {
+	background: rgba(135, 135, 135, 0.1);
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(135, 135, 135, 0.4);
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(135, 135, 135, 0.8);
+}
+
+/* 滚动条美化方案结束 */
+
+/* 富文本编辑器样式开始 */
+.ql-indent-1{
+	padding-left: 3em;
+}
+.ql-indent-2{
+	padding-left: 6em;
+}
+.ql-indent-3{
+	padding-left: 9em;
+}
+.ql-indent-4{
+	padding-left: 12em;
+}
+.ql-indent-5{
+	padding-left: 15em;
+}
+.ql-indent-6{
+	padding-left: 18em;
+}
+.ql-indent-7{
+	padding-left: 21em;
+}
+.ql-indent-8{
+	padding-left: 24em;
+}
+/* 富文本编辑器样式结束 */

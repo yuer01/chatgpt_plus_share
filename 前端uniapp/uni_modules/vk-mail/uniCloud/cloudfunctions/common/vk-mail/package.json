@@ -1,0 +1,16 @@
+{
+  "name": "vk-mail",
+  "version": "1.0.0",
+  "description": "【邮箱发送扩展包】适用于所有node.js环境。",
+  "main": "index.js",
+  "homepage": "https://vkdoc.fsq.pub",
+  "repository": {
+    "type": "git",
+    "url": "git+https://vkdoc.fsq.pub"
+  },
+  "author": "VK",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "uni-config-center": "file:../../../../../uni-config-center/uniCloud/cloudfunctions/common/uni-config-center"
+  }
+}

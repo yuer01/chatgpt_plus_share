@@ -1,0 +1,19 @@
+{
+	"bsonType": "object",
+	"required": ["_id", "value"],
+	"properties": {
+		"_id": {
+			"bsonType": "string",
+			"description": "key，格式：uni-id:[provider]:[appid]:[openid]:[access-token|user-access-token|session-key|encrypt-key-version|ticket]"
+		},
+		"value": {
+			"bsonType": "object",
+			"description": "字段_id对应的值"
+		},
+		"expired": {
+			"bsonType": "timestamp",
+			"description": "过期时间"
+		}
+	},
+	"version": "0.0.1"
+}

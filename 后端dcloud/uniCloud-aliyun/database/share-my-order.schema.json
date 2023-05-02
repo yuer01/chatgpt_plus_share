@@ -1,0 +1,80 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"acc_id":{
+			"bsonType":"string",
+			"description":"账号编号",
+			"title":"账号编号"
+		},
+		"password_key":{
+			"bsonType":"string",
+			"description":"私密信息",
+			"title":"私密信息"
+		},
+		"pay_state":{
+			"bsonType":"string",
+			"description":"支付状态，暂时不用",
+			"title":"支付状态"
+		},
+		"from_uid":{
+			"bsonType":"string",
+			"description":"来源用户编号",
+			"title":"来源用户编号"
+		},
+		"to_uid":{
+			"bsonType":"string",
+			"description":"目标用户编号",
+			"title":"目标用户编号"
+		},
+		"price":{
+			"bsonType":"int",
+			"description":"价格",
+			"title":"价格"
+		},
+		"from_pjx":{
+			"bsonType":"int",
+			"description":"来源评价星级",
+			"title":"来源评价星级"
+		},
+		"from_pjmemo":{
+			"bsonType":"string",
+			"description":"来源评价内容",
+			"title":"来源评价内容"
+		},
+		"to_pjx":{
+			"bsonType":"int",
+			"description":"目标评价星级",
+			"title":"目标评价星级"
+		},
+		"to_pjmemo":{
+			"bsonType":"string",
+			"description":"目标评价内容",
+			"title":"目标评价内容"
+		},
+		"order_state":{
+			"bsonType":"string",
+			"description":"订单状态",
+			"title":"订单状态"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+		
+		
+
+	}
+}

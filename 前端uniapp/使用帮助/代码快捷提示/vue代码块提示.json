@@ -1,0 +1,195 @@
+// 将下方代码复制到 hbx 工具 - 代码块设置 - vue代码块
+{
+	"$getData(data,key,defaultValue)": {
+	 "prefix": "$getData",
+	 "body": [
+			"$getData(data, 'aa.aa', defaultValue)"
+		],
+		"triggerAssist": false,
+		"description": "智能获取对象属性数据"
+	},
+	"vk-data-table（万能表格）": {
+		"body": [
+			"<!-- 表格组件开始 -->",
+			"<vk-data-table",
+			"\tref=\"table1\"",
+			"\t:action=\"table1.action\"",
+			"\t:columns=\"table1.columns\"",
+			"\t:query-form-param=\"queryForm1\"",
+			"\t:right-btns=\"['detail_auto','update','delete']\"",
+			"\t:selection=\"true\"",
+			"\t:row-no=\"true\"",
+			"\t:pagination=\"true\"",
+			"\t@update=\"updateBtn\"",
+			"\t@delete=\"deleteBtn\"",
+			"\t@current-change=\"currentChange\"",
+			"\t@selection-change=\"selectionChange\"",
+			"></vk-data-table>",
+			"<!-- 表格组件结束 -->"
+		],
+		"prefix": "vk-data-table",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-dialog（弹窗表单）": {
+		"body": [
+			"<!-- 弹窗开始 -->",
+			"<vk-data-dialog",
+			"\tv-model=\"form1.props.show\"",
+			"\ttitle=\"表单标题\"",
+			"\twidth=\"600px\"",
+			"\tmode=\"form\"",
+			">",
+			"\t<vk-data-form",
+			"\t\tref=\"form1\"",
+			"\t\tv-model=\"form1.data\"",
+			"\t\t:action=\"form1.props.action\"",
+			"\t\t:columns=\"form1.props.columns\"",
+			"\t\t:rules=\"form1.props.rules\"",
+			"\t\t:form-type=\"form1.props.formType\"",
+			"\t\t:loading.sync=\"form1.props.loading\"",
+			"\t\t:auto-close=\"true\"",
+			"\t\tlabel-width=\"140px\"",
+			"\t\t@success=\"onFormSuccess\"",
+			"\t></vk-data-form>",
+			"</vk-data-dialog>",
+			"<!-- 弹窗结束 -->"
+		],
+		"prefix": "vk-data-dialog",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-dialog（普通弹窗）": {
+		"body": [
+			"<!-- 弹窗开始 -->",
+			"<vk-data-dialog",
+			"\tv-model=\"dialog.show\"",
+			"\ttitle=\"标题\"",
+			"\twidth=\"500px\"",
+			"\ttop=\"14vh\"",
+			"\t:close-on-click-modal=\"true\"",
+			">",
+			"\t这里是自定义内容${0}",
+			"\t<template v-slot:footer=\"{ close }\">",
+			"\t\t<el-button @click=\"close\">取 消</el-button>",
+			"\t\t<el-button type=\"primary\" @click=\"close\">确 定</el-button>",
+			"\t</template>",
+			"</vk-data-dialog>",
+			"<!-- 弹窗结束 -->"
+		],
+		"prefix": "vk-data-dialog",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-icon（图标）": {
+		"body": [
+			"<vk-data-icon name=\"${0}vk-icon-text\" size=\"30\"></vk-data-icon>"
+		],
+		"prefix": "vk-data-icon",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（数字输入框）": {
+		"body": [
+			"<vk-data-input type=\"number\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入数字\" :precision=\"0\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（金额输入框）": {
+		"body": [
+			"<vk-data-input type=\"money\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入金额\" :precision=\"2\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（百分比输入框）": {
+		"body": [
+			"<vk-data-input type=\"percentage\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入\" :precision=\"0\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（折扣输入框）": {
+		"body": [
+			"<vk-data-input type=\"discount\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入\" :precision=\"0\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（步进器）": {
+		"body": [
+			"<vk-data-input type=\"number-box\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入\" :precision=\"0\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（多行文本）": {
+		"body": [
+			"<vk-data-input type=\"textarea\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input（单行文本）": {
+		"body": [
+			"<vk-data-input type=\"text\" v-model=\"form1.value\" width=\"300px\" placeholder=\"请输入\"></vk-data-input>"
+		],
+		"prefix": "vk-data-input",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input-address（地址）": {
+		"body": [
+			"<vk-data-input-address v-model=\"form1.address1\" placeholder=\"请选择省市区\" :level=\"3\"></vk-data-input-address>"
+		],
+		"prefix": "vk-data-input-address",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input-select（下拉选择）": {
+		"body": [
+			"<vk-data-input-select",
+			"\tv-model=\"form1.value\"",
+			"\t:localdata='[",
+			"\t\t{ value:1, label:\"选项1\" },",
+			"\t\t{ value:2, label:\"选项2\" }",
+			"\t]'",
+			"\tsize=\"small\"",
+			"\tclearable",
+			"\tplaceholder=\"请选择\"",
+			"></vk-data-input-select>"
+		],
+		"prefix": "vk-data-input-select",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-input-remote-select（远程选择）": {
+		"body": [
+			"<vk-data-input-remote-select",
+			"\tv-model=\"form1.user_id\"",
+			"\tplaceholder=\"请输入用户名\"",
+			"\taction=\"admin/select/kh/user\"",
+			"\twidth=\"300px\"",
+			"></vk-data-input-remote-select>"
+		],
+		"prefix": "vk-data-input-remote-select",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	},
+	"vk-data-upload（图片上传）": {
+		"body": [
+			"<vk-data-upload v-model=\"form1.images\" :limit=\"6\"></vk-data-upload>"
+		],
+		"prefix": "vk-data-upload",
+		"project": "uni-app",
+		"scope": "source.vue.html"
+	}
+
+}

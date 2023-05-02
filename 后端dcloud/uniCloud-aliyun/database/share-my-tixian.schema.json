@@ -1,0 +1,74 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"from_uid":{
+			"bsonType":"string",
+			"description":"用户编号",
+			"title":"用户编号"
+		},
+		"to_weixin":{
+			"bsonType":"string",
+			"description":"收款微信",
+			"title":"收款微信"
+		},
+		"to_alipay":{
+			"bsonType":"string",
+			"description":"收款支付宝号",
+			"title":"收款支付宝号"
+		},
+		"to_cardno":{
+			"bsonType":"string",
+			"description":"收款银行卡号",
+			"title":"收款银行卡号"
+		},
+		"mobile":{
+			"bsonType":"string",
+			"description":"联系手机号",
+			"title":"联系手机号"
+		},
+		"memo":{
+			"bsonType":"string",
+			"description":"备注",
+			"title":"备注"
+		},
+		"money":{
+			"bsonType":"int",
+			"description":"提现金额",
+			"title":"提现金额"
+		},
+		"state":{
+			"bsonType":"string",
+			"description":"提现状态",
+			"title":"提现状态"
+		},
+		"create_user_name":{
+			"bsonType":"string",
+			"description":"创建人",
+			"title":"创建人"
+		},
+		"create_user_id":{
+			"bsonType":"string",
+			"description":"创建人id",
+			"title":"创建人id"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+		
+
+	}
+}

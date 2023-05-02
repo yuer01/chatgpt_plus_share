@@ -1,0 +1,54 @@
+{
+	"passwordSecret": "passwordSecret-demo",
+	"tokenSecret": "tokenSecret-demo",
+	"tokenExpiresIn": 604800,
+	"tokenExpiresThreshold": 259200,
+	"tokenMaxLimit": 10,
+	"passwordErrorLimit": 6,
+	"bindTokenToDevice": false,
+	"passwordErrorRetryTime": 3600,
+	"autoSetInviteCode": true,
+	"forceInviteCode": false,
+	"preferedAppPlatform": "app-plus",
+	"preferedWebPlatform": "h5",
+	"removeDcloudAppid": false,
+	"app-plus": {
+		"tokenExpiresIn": 604800,
+		"oauth": {
+			"weixin": {
+				"appid": "",
+				"appsecret": ""
+			}
+		}
+	},
+	"mp-weixin": {
+		"oauth": {
+			"weixin": {
+				"appid": "",
+				"appsecret": ""
+			}
+		}
+	},
+	"mp-alipay": {
+		"oauth": {
+			"alipay": {
+				"appid": "",
+				"privateKey": ""
+			}
+		}
+	},
+	"service": {
+		"sms": {
+			"name": "重要",
+			"codeExpiresIn": 180,
+			"smsKey": "你的smsKey",
+			"smsSecret": "你的smsSecret",
+			"templateId": "你的短信模板ID"
+		},
+		"univerify": {
+			"appid": "your appid",
+			"apiKey": "your apiKey",
+			"apiSecret": "your apiSecret"
+		}
+	}
+}

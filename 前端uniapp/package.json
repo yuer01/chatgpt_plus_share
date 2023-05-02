@@ -1,0 +1,96 @@
+{
+    "id": "vk-unicloud-admin",
+    "name": "vk-unicloud-admin",
+    "version": "1.15.11",
+    "displayName": "【开箱即用】vk-unicloud-admin-快速开发框架-打造unicloud最好用的admin",
+    "description": "vk-unicloud-admin是基于uniapp+unicloud+uni-id+vk-router+element的一套快速PC admin企业级开发框架。小白几分钟即完成一个页面CRUD。",
+    "keywords": [
+        "vk-unicloud-admin",
+        "支持表单可视化拖拽生成代码",
+        "vk云开发",
+        "uniapp、uni-id、vk-unicloud-router、vk-admin、element",
+        "内置众多API、工具包"
+    ],
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "https://gitee.com/vk-uni/vk-unicloud-admin",
+    "author": "VK",
+    "license": "MIT",
+    "homepage": "https://vkdoc.fsq.pub/admin/",
+    "dependencies": {
+        "element-ui": "2.15.7",
+        "umy-ui": "1.1.6",
+        "vk-unicloud-admin-ui": "^1.15.23"
+    },
+    "engines": {
+        "HBuilderX": "^3.1.10"
+    },
+    "dcloudext": {
+        "sale": {
+            "regular": {
+                "price": "0.00"
+            },
+            "sourcecode": {
+                "price": "0.00"
+            }
+        },
+        "contact": {
+            "qq": "370725567"
+        },
+        "declaration": {
+            "ads": "无",
+            "data": "插件不采集任何数据",
+            "permissions": "无"
+        },
+        "npmurl": "https://vkdoc.fsq.pub/admin/",
+        "type": "unicloud-template-project"
+    },
+    "uni_modules": {
+        "platforms": {
+            "cloud": {
+                "tcb": "y",
+                "aliyun": "y"
+            },
+            "client": {
+                "App": {
+                    "app-vue": "n",
+                    "app-nvue": "n"
+                },
+                "H5-mobile": {
+                    "Safari": "y",
+                    "Android Browser": "y",
+                    "微信浏览器(Android)": "y",
+                    "QQ浏览器(Android)": "y"
+                },
+                "H5-pc": {
+                    "Chrome": "y",
+                    "IE": "n",
+                    "Edge": "y",
+                    "Firefox": "y",
+                    "Safari": "y"
+                },
+                "小程序": {
+                    "微信": "n",
+                    "阿里": "n",
+                    "百度": "n",
+                    "字节跳动": "n",
+                    "QQ": "n",
+                    "钉钉": "u",
+                    "快手": "u",
+                    "飞书": "u",
+                    "京东": "u"
+                },
+                "快应用": {
+                    "华为": "n",
+                    "联盟": "n"
+                },
+                "Vue": {
+                    "vue2": "y",
+                    "vue3": "n"
+                }
+            }
+        }
+    }
+}

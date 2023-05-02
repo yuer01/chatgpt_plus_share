@@ -1,0 +1,65 @@
+[{
+  "menu_id": "vk-in",
+  "name": "",
+  "hidden_menu": true,
+  "children": [{
+      "menu_id": "vk-in-index",
+      "name": "首页",
+      "url": "/",
+      "fixed": true
+    },
+	{
+	      "menu_id": "my_system-user",
+	      "name": "用户管理",
+	      "icon": "",
+	      "url": "/pages/user/list"
+	    },
+    {
+      "menu_id": "vk-login",
+      "name": "登录注册",
+      "children": [{
+          "menu_id": "vk-login-index",
+          "name": "登录",
+          "url": "/pages/login/index",
+          "hidden_tab": true
+        },
+        {
+          "menu_id": "vk-login-register",
+          "name": "注册",
+          "url": "/pages/login/register",
+          "hidden_tab": true
+        },
+        {
+          "menu_id": "vk-login-retrieve",
+          "name": "密码找回",
+          "url": "/pages/login/retrieve",
+          "hidden_tab": true
+        }
+      ]
+    },
+    {
+      "menu_id": "vk-error",
+      "name": "异常页面",
+      "icon": "el-icon-warning-outline",
+      "children": [{
+          "menu_id": "vk-error-403",
+          "name": "403",
+          "url": "/pages_plugs/error/403",
+          "hidden_tab": true
+        },
+        {
+          "menu_id": "vk-error-404",
+          "name": "404",
+          "url": "/pages_plugs/error/404",
+          "hidden_tab": true
+        },
+        {
+          "menu_id": "vk-error-500",
+          "name": "500",
+          "url": "/pages_plugs/error/500",
+          "hidden_tab": true
+        }
+      ]
+    }
+  ]
+}]

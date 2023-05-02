@@ -1,0 +1,5 @@
+{"_id":"001","_add_time":1596416400000,"comment":"系统内置角色 - 请勿修改","enable":true,"permission":[],"role_id":"admin","role_name":"超级管理员"}
+{"_id":"005","_add_time":1596416400000,"comment":"系统内置角色 - 请勿修改","enable":true,"permission":[],"role_id":"query-all","role_name":"boss"}
+{"_id":"006","_add_time":1596416400000,"comment":"更细粒化的自定义角色权限示例","enable":true,"permission":[],"role_id":"custom-role-1","role_name":"自定义角色-1"}
+
+

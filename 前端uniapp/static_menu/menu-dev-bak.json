@@ -1,0 +1,470 @@
+[{
+		"menu_id": "components-admin",
+		"name": "VK框架 组件演示",
+		"comment":"以下菜单在正式环境不会出现!",
+		"icon": "el-icon-star-off",
+		"url": "",
+		"sort": 999,
+		"children": [
+			{
+				"menu_id": "vk-data-icon",
+				"name": "Icon 图标",
+				"icon": "el-icon-picture",
+				"children": [{
+						"menu_id": "vk-data-icon-vk",
+						"name": "VK框架 图标",
+						"icon": "",
+						"url": "/pages_template/components/icons/vk-icons"
+					},
+					{
+						"menu_id": "vk-data-icon-element",
+						"name": "Element 图标",
+						"icon": "",
+						"url": "/pages_template/components/icons/element-icons"
+					}
+				]
+			},{
+				"menu_id": "vk-data-table",
+				"name": "Table 智能表格",
+				"icon": "el-icon-s-grid",
+				"children": [{
+						"menu_id": "vk-data-table-basic",
+						"name": "基础用法",
+						"icon": "",
+						"url": "/pages_template/components/table/table-basic"
+					},
+					{
+						"menu_id": "vk-data-table-easy",
+						"name": "综合用法",
+						"icon": "",
+						"url": "/pages_template/components/table/table-easy"
+					},
+          {
+            "menu_id": "vk-data-table-query",
+            "name": "搜索折叠",
+            "icon": "",
+            "url": "/pages_template/components/table/table-query"
+          },
+          {
+            "menu_id": "vk-data-table-expand",
+            "name": "表格行展开",
+            "icon": "",
+            "url": "/pages_template/components/table/table-expand"
+          }
+				]
+			},
+			{
+				"menu_id": "vk-data-form",
+				"name": "Form 万能表单",
+				"icon": "vk-icon-edit",
+				"children": [{
+						"menu_id": "vk-data-form-basic",
+						"name": "基础用法",
+						"icon": "",
+						"url": "/pages_template/components/form/form-basic"
+					},
+					{
+						"menu_id": "vk-data-form-inline",
+						"name": "行内表单",
+						"icon": "",
+						"url": "/pages_template/components/form/form-inline"
+					},
+					{
+						"menu_id": "vk-data-form-dialog",
+						"name": "弹窗表单",
+						"icon": "",
+						"url": "/pages_template/components/form/form-dialog"
+					},
+					{
+						"menu_id": "vk-data-form-dialog-2",
+						"name": "复用表单",
+						"icon": "",
+						"url": "/pages_template/components/form/form-dialog-2"
+					},
+					{
+						"menu_id": "vk-data-form-slot",
+						"name": "插槽用法",
+						"icon": "",
+						"url": "/pages_template/components/form/form-slot"
+					},
+          {
+          	"menu_id": "vk-data-form-array-object",
+          	"name": "子表单",
+          	"icon": "",
+          	"url": "/pages_template/components/form/form-array-object"
+          },
+					{
+						"menu_id": "vk-data-form-pro",
+						"name": "万能表单",
+						"icon": "",
+						"url": "/pages_template/components/form/form-pro"
+					}
+				]
+			},
+			{
+				"menu_id": "vk-data-input",
+				"name": "Input 输入",
+				"icon": "el-icon-edit-outline",
+				"children": [{
+						"menu_id": "vk-data-input-number",
+						"name": "数字输入框",
+						"icon": "",
+						"url": "/pages_template/components/input/input-number"
+					},
+					{
+						"menu_id": "vk-data-input-number-box",
+						"name": "步进器",
+						"icon": "",
+						"url": "/pages_template/components/input/input-number-box"
+					},
+					{
+						"menu_id": "vk-data-input-money",
+						"name": "金额输入框",
+						"icon": "",
+						"url": "/pages_template/components/input/input-money"
+					},
+					{
+						"menu_id": "vk-data-input-percentage",
+						"name": "百分比输入框",
+						"icon": "",
+						"url": "/pages_template/components/input/input-percentage"
+					},
+					{
+						"menu_id": "vk-data-input-json",
+						"name": "JSON编辑器",
+						"icon": "",
+						"url": "/pages_template/components/input/input-json"
+					},
+					{
+						"menu_id": "vk-data-input-province",
+						"name": "省份选择器",
+						"icon": "",
+						"url": "/pages_template/components/input/input-province"
+					},
+					{
+						"menu_id": "vk-data-input-address",
+						"name": "省市区联动",
+						"icon": "",
+						"url": "/pages_template/components/input/input-address"
+					},
+					{
+						"menu_id": "vk-data-input-select",
+						"name": "下拉选择器",
+						"icon": "",
+						"url": "/pages_template/components/input/input-select"
+					},
+					{
+						"menu_id": "vk-data-input-remote-select",
+						"name": "远程搜索选择器",
+						"icon": "",
+						"url": "/pages_template/components/input/input-remote-select"
+					},
+					{
+						"menu_id": "vk-data-input-all",
+						"name": "聚合输入框",
+						"icon": "",
+						"url": "/pages_template/components/input/input"
+					}
+				]
+			},
+			{
+				"menu_id": "vk-data-detail",
+				"name": "Detail 详情展示",
+				"icon": "el-icon-document",
+				"children": [{
+						"menu_id": "vk-data-detail-basic",
+						"name": "基础形式",
+						"icon": "",
+						"url": "/pages_template/components/detail/detail-basic"
+					},
+					{
+						"menu_id": "vk-data-detail-table",
+						"name": "表格形式",
+						"icon": "",
+						"url": "/pages_template/components/detail/detail-table"
+					}
+				]
+			},
+			{
+				"menu_id": "vk-data-dialog",
+				"name": "Dialog 弹窗",
+				"icon": "el-icon-copy-document",
+				"children": [{
+						"menu_id": "vk-data-dialog-basic",
+						"name": "基础用法",
+						"icon": "",
+						"url": "/pages_template/components/dialog/dialog-basic"
+					},
+					{
+						"menu_id": "vk-data-dialog-form",
+						"name": "弹窗表单",
+						"icon": "",
+						"url": "/pages_template/components/dialog/dialog-form"
+					},
+					{
+						"menu_id": "vk-data-dialog-table",
+						"name": "弹窗表格",
+						"icon": "",
+						"url": "/pages_template/components/dialog/dialog-table"
+					}
+				]
+			},
+			{
+				"menu_id": "vk-data-upload",
+				"name": "Upload 上传",
+				"icon": "el-icon-upload2",
+				"children": [{
+						"menu_id": "vk-data-upload-basic",
+						"name": "基础用法",
+						"icon": "",
+						"url": "/pages_template/components/upload/upload-basic"
+					},
+					{
+						"menu_id": "vk-data-upload-drag",
+						"name": "拖拽上传",
+						"icon": "",
+						"url": "/pages_template/components/upload/upload-drag"
+					}
+				]
+			},
+			{
+				"menu_id": "vk-data-editor",
+				"name": "editor 编辑器",
+				"icon": "el-icon-edit-outline",
+				"children": [{
+					"menu_id": "vk-data-editor-1",
+					"name": "富文本编辑器",
+					"icon": "",
+					"url": "/pages_template/components/editor/editor"
+				}]
+			}
+		]
+	},
+	{
+		"menu_id": "__demo__",
+		"name": "Element 静态功能演示",
+		"comment":"以下菜单在正式环境不会出现!",
+		"icon": "el-icon-star-off",
+		"url": "",
+		"sort": 1000,
+		"children": [{
+				"menu_id": "__demo__popup",
+				"name": "弹窗页面",
+				"icon": "el-icon-tickets",
+				"children": [{
+						"menu_id": "__demo__popup-alert",
+						"name": "alert",
+						"icon": "",
+						"url": "/pages_template/element/popup/alert"
+					},
+					{
+						"menu_id": "__demo__popup-dialog",
+						"name": "dialog",
+						"icon": "",
+						"url": "/pages_template/element/popup/dialog"
+					},
+					{
+						"menu_id": "__demo__popup-drawer",
+						"name": "drawer",
+						"icon": "",
+						"url": "/pages_template/element/popup/drawer"
+					},
+					{
+						"menu_id": "__demo__popup-loading",
+						"name": "loading",
+						"icon": "",
+						"url": "/pages_template/element/popup/loading"
+					},
+					{
+						"menu_id": "__demo__popup-message",
+						"name": "message",
+						"icon": "",
+						"url": "/pages_template/element/popup/message"
+					},
+					{
+						"menu_id": "__demo__popup-message-box",
+						"name": "message-box",
+						"icon": "",
+						"url": "/pages_template/element/popup/message-box"
+					},
+					{
+						"menu_id": "__demo__popup-notification",
+						"name": "notification",
+						"icon": "",
+						"url": "/pages_template/element/popup/notification"
+					},
+					{
+						"menu_id": "__demo__popup-popconfirm",
+						"name": "popconfirm",
+						"icon": "",
+						"url": "/pages_template/element/popup/popconfirm"
+					},
+					{
+						"menu_id": "__demo__popup-popover",
+						"name": "popover",
+						"icon": "",
+						"url": "/pages_template/element/popup/popover"
+					},
+					{
+						"menu_id": "__demo__popup-tooltip",
+						"name": "tooltip",
+						"icon": "",
+						"url": "/pages_template/element/popup/tooltip"
+					}
+				]
+			},
+			{
+				"menu_id": "__demo__form",
+				"name": "表单页面",
+				"icon": "el-icon-s-order",
+				"children": [{
+						"menu_id": "__demo__form-basic-form",
+						"name": "基础表单",
+						"icon": "",
+						"url": "/pages_template/element/form/basic-form"
+					},
+					{
+						"menu_id": "__demo__form-advanced-form",
+						"name": "高级表单",
+						"icon": "",
+						"url": "/pages_template/element/form/advanced-form"
+					},
+					{
+						"menu_id": "__demo__form-step-form",
+						"name": "分步表单",
+						"icon": "",
+						"url": "/pages_template/element/form/step-form"
+					}
+				]
+			},
+			{
+				"menu_id": "__demo__result",
+				"name": "结果页",
+				"icon": "el-icon-circle-check",
+				"children": [{
+						"menu_id": "__demo__result-success",
+						"name": "成功页",
+						"icon": "",
+						"url": "/pages_template/element/result/success"
+					},
+					{
+						"menu_id": "__demo__result-fail",
+						"name": "失败页",
+						"icon": "",
+						"url": "/pages_template/element/result/fail"
+					}
+				]
+			},
+			{
+				"menu_id": "__demo__error",
+				"name": "异常页面",
+				"icon": "el-icon-warning-outline",
+				"children": [{
+						"menu_id": "__demo__error-403",
+						"name": "403",
+						"icon": "",
+						"url": "/pages_plugs/error/403"
+					},
+					{
+						"menu_id": "__demo__error-404",
+						"name": "404",
+						"icon": "",
+						"url": "/pages_plugs/error/404"
+					},
+					{
+						"menu_id": "__demo__error-500",
+						"name": "500",
+						"icon": "",
+						"url": "/pages_plugs/error/500"
+					}
+				]
+			},
+			{
+				"menu_id": "__demo__detail",
+				"name": "详情页面",
+				"icon": "el-icon-tickets",
+				"children": [{
+					"menu_id": "__demo__detail-comprehensive",
+					"name": "综合详情页",
+					"icon": "",
+					"url": "/pages_template/element/detail/detail"
+				}]
+			},
+			{
+				"menu_id": "__demo__setting",
+				"name": "设置",
+				"icon": "el-icon-s-tools",
+				"children": [{
+					"menu_id": "__demo__setting-account",
+					"name": "账户设置",
+					"icon": "",
+					"url": "/pages_template/element/setting/account"
+				}]
+			}
+		]
+	},
+	{
+		"menu_id": "__utils__",
+		"name": "VK框架实用工具",
+		"comment":"以下菜单在正式环境不会出现!",
+		"icon": "el-icon-star-off",
+		"url": "",
+		"sort": 1001,
+		"children": [{
+			"menu_id": "__utils__vk-form-visualizer",
+			"name": "表单可视化设计器",
+			"icon": "el-icon-tickets",
+			"url": "https://vkunicloud.fsq.pub/vk-form-visualizer/"
+		}]
+	},
+	{
+		"menu_id": "__links__",
+		"name": "友情链接",
+		"comment":"以下菜单在正式环境不会出现!",
+		"icon": "el-icon-star-off",
+		"url": "",
+		"sort": 1002,
+		"children": [
+		{
+			"menu_id": "__links__1",
+			"name": "admin框架文档",
+			"icon": "el-icon-tickets",
+			"url": "https://vkdoc.fsq.pub/admin/"
+		},
+		{
+			"menu_id": "__links__2",
+			"name": "更多VK插件",
+			"icon": "el-icon-tickets",
+			"url": "https://ext.dcloud.net.cn/search?q=vk"
+		},
+		{
+			"menu_id": "__links__3",
+			"name": "unicloud文档",
+			"icon": "el-icon-tickets",
+			"url": "https://uniapp.dcloud.io/uniCloud/README"
+		},
+		{
+			"menu_id": "__links__4",
+			"name": "element文档",
+			"icon": "el-icon-tickets",
+			"url": "https://element.eleme.cn/#/zh-CN/component/button"
+		}]
+	}
+	,
+	{
+		"menu_id": "__test__",
+		"name": "测试权限用",
+		"comment":"以下菜单在正式环境不会出现!",
+		"icon": "el-icon-star-off",
+		"url": "",
+		"sort": 900,
+		"children": [
+		{
+			"menu_id": "__test__1",
+			"name": "查看表格",
+			"icon": "el-icon-tickets",
+			"url": "/pages_template/components/table/table-easy"
+		}
+		]
+	}
+]

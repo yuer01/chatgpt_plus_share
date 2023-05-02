@@ -1,0 +1,177 @@
+{
+	"pages": [
+		{ "path": "pages/index/index" },
+		{
+			"path": "pages/login/index",
+			"style": {
+				"topWindow": false,
+				"leftWindow": false,
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{ "path": "pages/user/list" }
+	    
+        ,{
+            "path" : "pages/my_acc/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/my_order/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/my_tixian/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/share_home/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    // ,{
+    // "path": "uni_modules/uni-pay/pages/success/success",
+    // "style": {
+    //     "backgroundColor": "#F8F8F8",
+    //     "navigationBarTitleText": "支付成功"
+    // }
+// }
+// ,{
+//     "path": "uni_modules/uni-pay/pages/ad-interactive-webview/ad-interactive-webview",
+//     "style": {
+//         "backgroundColor": "#F8F8F8",
+//         "navigationBarTitleText": "ad"
+//     }
+// }
+    ,{
+            "path" : "pages/h5/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [{
+			"root": "pages_plugs",
+			"pages": [
+				{ "path": "error/404", "style": { "navigationBarTitleText": "页面不存在" } },
+				{ "path": "error/403", "style": { "navigationBarTitleText": "无权访问" } },
+				{ "path": "error/500", "style": { "navigationBarTitleText": "服务器出错了" } },
+				{ "path": "system/user/list" },
+				{ "path": "system/role/list" },
+				{ "path": "system/permission/list" },
+				{ "path": "system/menu/list" },
+				{ "path": "system/app/list" },
+				{ "path": "system/app-upgrade-center/list" },
+				{ "path": "system_uni/vk-global-data" },
+				{ "path": "system_uni/uni-id-log" },
+				{ "path": "system_uni/opendb-admin-log" },
+				{ "path": "system_uni/vk-components-dynamic" },
+				{ "path": "system_uni/uni-id-files/list" }
+			]
+		},
+		
+		{
+			"root": "pages_template/components",
+			"pages": [
+				{ "path": "icons/vk-icons" },
+				{ "path": "icons/element-icons" },
+				{ "path": "icons/vk-icons-page", "style": { "topWindow": false,"leftWindow": false } },
+				{ "path": "icons/element-icons-page", "style": { "topWindow": false,"leftWindow": false } },
+				{ "path": "table/table-basic" },
+				{ "path": "table/table-easy" },
+				{ "path": "table/table-query" },
+				{ "path": "table/table-expand" },
+				{ "path": "form/form-array-object" },
+				{ "path": "form/form-basic" },
+				{ "path": "form/form-cert" , "style": { "topWindow": false,"leftWindow": false } },
+				{ "path": "form/form-inline" },
+				{ "path": "form/form-dialog" },
+				{ "path": "form/form-pro" },
+				{ "path": "form/form-dialog-2" },
+				{ "path": "form/form-slot" },
+				{ "path": "detail/detail-basic" },
+				{ "path": "detail/detail-table" },
+				{ "path": "dialog/dialog-basic" },
+				{ "path": "dialog/dialog-form" },
+				{ "path": "dialog/dialog-table" },
+				{ "path": "upload/upload-basic" },
+				{ "path": "upload/upload-drag" },
+				{ "path": "input/input-address" },
+				{ "path": "input/input-money" },
+				{ "path": "input/input-number" },
+				{ "path": "input/input-number-box" },
+				{ "path": "input/input-percentage" },
+				{ "path": "input/input-json" },
+				{ "path": "input/input-province" },
+				{ "path": "input/input-select" },
+				{ "path": "input/input-remote-select" },
+				{ "path": "input/input" },
+				{ "path": "editor/editor" }
+			]
+		},
+		{
+			"root": "pages_template/element",
+			"pages": [
+				{ "path": "detail/detail" },
+				{ "path": "form/basic-form" },
+				{ "path": "form/advanced-form" },
+				{ "path": "form/step-form" },
+				{ "path": "setting/account" },
+				{ "path": "popup/alert" },
+				{ "path": "popup/dialog" },
+				{ "path": "popup/drawer" },
+				{ "path": "popup/loading" },
+				{ "path": "popup/message" },
+				{ "path": "popup/message-box" },
+				{ "path": "popup/notification" },
+				{ "path": "popup/popconfirm" },
+				{ "path": "popup/popover" },
+				{ "path": "popup/tooltip" },
+				{ "path": "result/fail" },
+				{ "path": "result/success" }
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "管理后台",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"topWindow": {
+		"path": "windows/topWindow",
+		"style": {
+			"height": "100px"
+		},
+		"matchMedia": {
+			"minWidth": 0
+		}
+	},
+	"leftWindow": {
+		"path": "windows/leftWindow",
+		"style": {
+			"width": "240px"
+		}
+	}
+}
