@@ -1,0 +1,43 @@
+[
+  {
+    "menu_id": "system-uni",
+    "name": "系统设置",
+    "icon": "el-icon-s-tools",
+    "sort": 110,
+    "children": [{
+        "menu_id": "system-uni-uni-id-files",
+        "name": "素材管理",
+        "icon": "el-icon-folder-opened",
+        "url": "/pages_plugs/system_uni/uni-id-files/list",
+        "sort": 0
+      },{
+        "menu_id": "system-uni-vk-global-data",
+        "name": "系统缓存管理",
+        "icon": "",
+        "url": "/pages_plugs/system_uni/vk-global-data",
+        "sort": 1
+      },
+      {
+        "menu_id": "system-uni-vk-components-dynamic",
+        "name": "动态组件数据",
+        "icon": "",
+        "url": "/pages_plugs/system_uni/vk-components-dynamic",
+        "sort": 2
+      },
+      {
+        "menu_id": "system-uni-uni-id-log",
+        "name": "用户登录日志",
+        "icon": "",
+        "url": "/pages_plugs/system_uni/uni-id-log",
+        "sort": 3
+      },
+      {
+        "menu_id": "system-uni-opendb-admin-log",
+        "name": "系统操作日志",
+        "icon": "",
+        "url": "/pages_plugs/system_uni/opendb-admin-log",
+        "sort": 4
+      }
+    ]
+  }
+]

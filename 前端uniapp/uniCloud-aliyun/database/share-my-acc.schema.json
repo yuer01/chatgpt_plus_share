@@ -1,0 +1,64 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"type":{
+			"bsonType":"string",
+			"description":"类型",
+			"title":"类型"
+		},
+		"title":{
+			"bsonType":"string",
+			"description":"标题",
+			"title":"标题"
+		},
+		"username":{
+			"bsonType":"string",
+			"description":"账号",
+			"title":"账号"
+		},
+		"password_key":{
+			"bsonType":"string",
+			"description":"私密信息",
+			"title":"私密信息"
+		},
+		"end_time":{
+			"bsonType":"timestamp",
+			"description":"结束日期",
+			"title":"结束日期"
+		},
+		"price":{
+			"bsonType":"int",
+			"description":"价格",
+			"title":"价格"
+		},
+		"create_user_name":{
+			"bsonType":"string",
+			"description":"创建人",
+			"title":"创建人"
+		},
+		"create_user_id":{
+			"bsonType":"string",
+			"description":"创建人id",
+			"title":"创建人id"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+		
+
+	}
+}
