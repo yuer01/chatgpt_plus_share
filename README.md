@@ -22,7 +22,8 @@ https://docs.qq.com/doc/DRFNIU0xpZmpSTWNG<br/><br/>
 
 
 沟通群：<br/>
-<img style="width:50%" src="./doc/img/20230525094813.jpg" />
+https://d5ckbc7rih.feishu.cn/wiki/KPnRwM3cLiDzn2kbOs8c1wUBnMc 
+现在内容都在这个文档上了。群二维码过期了。
 </p>
 
 <p>
